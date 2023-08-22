@@ -131,7 +131,12 @@ school_types
 ```
 ## School type
 ```
+# Use the code provided to select all of the school types
+#school_types = school_data_complete["type"].unique()
 
+school_types = school_data_complete.groupby('school_name')['type'].unique().reset_index()
+school_types.columns = ['school_name', 'School_type']
+school_types
 ```
 ## Total students count per school
 ```
