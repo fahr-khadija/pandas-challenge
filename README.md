@@ -9,7 +9,7 @@ Perform the necessary calculations and then create a high-level snapshot of the 
 
 Include the following:
 
-Total number of unique schools
+## Total number of unique schools
 ```
 
 
@@ -19,29 +19,31 @@ Total number of unique schools
 ```
 
 ```
-Total budget
+## Total budget
 ```
 
 ```
-Total budget
+## Total budget
 ```
 
 ```
-Average math score
+## Average math score
 ```
 
 ```
-Average reading score
-
-% passing math (the percentage of students who passed math)
+## Average reading score
 ```
 
 ```
-% passing reading (the percentage of students who passed reading)
+## % passing math (the percentage of students who passed math)
 ```
 
 ```
-% overall passing (the percentage of students who passed math AND reading)
+## % passing reading (the percentage of students who passed reading)
+```
+
+```
+## % overall passing (the percentage of students who passed math AND reading)
 ```
 
 ```
@@ -50,43 +52,43 @@ Perform the necessary calculations and then create a DataFrame that summarizes k
 
 Include the following:
 
-School name
+## School name
 ```
 
 ```
-School type
+## School type
 ```
 
 ```
-Total students
+## Total students
 ```
 
 ```
-Total school budget
+## Total school budget
 ```
 
 ```
-Per student budget
+## Per student budget
 ```
 
 ```
-Average math score
+## Average math score
 ```
 
 ```
-Average reading score
+## Average reading score
 ```
 
 ```
-% passing math (the percentage of students who passed math)
+## % passing math (the percentage of students who passed math)
 ```
 
 ```
-% passing reading (the percentage of students who passed reading)
+## % passing reading (the percentage of students who passed reading)
 ```
 
 ```
-% overall passing (the percentage of students who passed math AND reading)
+## % overall passing (the percentage of students who passed math AND reading)
 ```
 
 ```
@@ -138,27 +140,27 @@ Use the scores above to create a DataFrame called spending_summary.
  "
 ### Include the following metrics in the table:
 
-Average math score
+## Average math score
 ```
 
 ```
-Average reading score
+## Average reading score
 ```
 
 ```
-% passing math (the percentage of students who passed math)
+## % passing math (the percentage of students who passed math)
 ```
 
 ```
-% passing reading (the percentage of students who passed reading)
+## % passing reading (the percentage of students who passed reading)
 ```
 
 ```
-% overall passing (the percentage of students who passed math AND reading)
+## % overall passing (the percentage of students who passed math AND reading)
 ```
 
 ```
-Scores by School Size
+## Scores by School Size
 ```
 
 ```
