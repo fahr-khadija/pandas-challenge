@@ -11,7 +11,8 @@ Include the following:
 
 Total number of unique schools
 
-Total students
+Total Students
+"Total budget "
 
 Total budget
 
