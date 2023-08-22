@@ -77,14 +77,14 @@ labels = ["<$585", "$585-630", "$630-645", "$645-680"]
 Use pd.cut to categorize spending based on the bins.
 
 Use the following code to then calculate mean scores per spending range.
-
+"
 spending_math_scores = school_spending_df.groupby(["Spending Ranges (Per Student)"])["Average Math Score"].mean()
 spending_reading_scores = school_spending_df.groupby(["Spending Ranges (Per Student)"])["Average Reading Score"].mean()
 spending_passing_math = school_spending_df.groupby(["Spending Ranges (Per Student)"])["% Passing Math"].mean()
 spending_passing_reading = school_spending_df.groupby(["Spending Ranges (Per Student)"])["% Passing Reading"].mean()
 overall_passing_spending = school_spending_df.groupby(["Spending Ranges (Per Student)"])["% Overall Passing"].mean()
 Use the scores above to create a DataFrame called spending_summary.
-
+ "
 Include the following metrics in the table:
 
 Average math score
