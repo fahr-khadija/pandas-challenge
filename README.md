@@ -337,8 +337,15 @@ school_spending_df = per_school_summary.copy()
 ```
 ### Use pd.cut to categorize spending based on the bins.
 ```
-school_spending_df["Spending Ranges (Per Student)"] = 
-school_spending_df
+# Establish the bins and labels
+spening_bins = [0, 585, 630, 645, 680]
+labels = ["<$585", "$585-630", "$630-645", "$645-680"]
+# Use pd.cut() to categorize spending based on the bins
+school_spending_df["Spending Ranges (Per Student)"] = pd.cut(
+    school_spending_df["Per Student Budget"],
+    bins=spending_bins,
+    labels=labels
+)
 ```
 ### Use the following code to then calculate mean scores per spending range.
 ```
