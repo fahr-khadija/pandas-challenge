@@ -304,6 +304,7 @@ math_scores_by_grade.index.name = None
 # Display the DataFrame
 math_scores_by_grade
 ```
+-![image](https://github.com/fahr-khadija/pandas-challenge/blob/main/Images/math_score_by_grade.jpg)
 ## Reading Scores by Grade
 Create a DataFrame that lists the average reading score for students of each grade level (9th, 10th, 11th, 12th) at each school.
 Scores by School Spending
@@ -332,6 +333,7 @@ reading_scores_by_grade.index.name = None
 # Display the DataFrame
 reading_scores_by_grade
 ```
+-![image](https://github.com/fahr-khadija/pandas-challenge/blob/main/Images/reading_score_by_grade.jpg)
 # Scores by School Spending
 
 ## Create a table that breaks down school performance based on average spending ranges (per student).
