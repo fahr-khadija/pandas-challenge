@@ -121,6 +121,8 @@ district_summary["Total Budget"] = district_summary["Total Budget"].map("${:,.2f
 district_summary
 ```
 -![image](https://github.com/fahr-khadija/pandas-challenge/blob/main/Images/district_summary.jpg)
+
+
 # School Summary
 
 Perform the necessary calculations and then create a DataFrame that summarizes key metrics about each school.
@@ -255,7 +257,7 @@ per_school_summary["Per Student Budget"] = per_school_summary["Per Student Budge
 # Display the DataFrame
 per_school_summary.head(5)
 ```
-
+-![image](https://github.com/fahr-khadija/pandas-challenge/blob/main/Images/school_summary.jpg)
 ## Highest-Performing Schools (by % Overall Passing)
 ```
 # Sort the schools by `% Overall Passing` in descending order
