@@ -120,7 +120,7 @@ district_summary["Total Budget"] = district_summary["Total Budget"].map("${:,.2f
 # Display the DataFrame
 district_summary
 ```
--![image]()
+-![image](Images/district_summary.jpg)
 # School Summary
 
 Perform the necessary calculations and then create a DataFrame that summarizes key metrics about each school.
