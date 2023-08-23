@@ -267,6 +267,7 @@ sorted_per_school_summary = per_school_summary.sort_values(by='% Overall Passing
 top_5_schools = sorted_per_school_summary.head(5)
 top_5_schools
 ```
+-![image](https://github.com/fahr-khadija/pandas-challenge/blob/main/Images/top_5_school_by_overallpassing.jpg)
 ## Lowest-Performing Schools (by % Overall Passing)
 Sort the schools by % Overall Passing in ascending order and display the top 5 rows.
 ```
@@ -275,6 +276,7 @@ Sort the schools by % Overall Passing in ascending order and display the top 5 r
 bottom_schools  = per_school_summary.sort_values(by='% Overall Passing', ascending=True)
 bottom_schools.head(5)
 ```
+-![image](https://github.com/fahr-khadija/pandas-challenge/blob/main/Images/bottom_5_school_by_overallpassing.jpg)
 ## Math Scores by Grade
 Perform the necessary calculations to create a DataFrame that lists the average math score for students of each grade level (9th, 10th, 11th, 12th) at each school.
 ```
