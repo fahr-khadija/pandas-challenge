@@ -369,6 +369,7 @@ spending_passing_reading = school_spending_df.groupby(["Spending Ranges (Per Stu
 overall_passing_spending = school_spending_df.groupby(["Spending Ranges (Per Student)"])["% Overall Passing"].mean()
 Use the scores above to create a DataFrame called spending_summary.
 ```
+-![image](https://github.com/fahr-khadija/pandas-challenge/blob/main/Images/score_by_school_Size_sammury.jpg)
 ### Include the following metrics in the table:
 Average math score,Average reading score,% passing math (the percentage of students who passed math),% passing reading (the percentage of students who passed reading),% overall passing (the percentage of students who passed math AND reading),Scores by School Size
 
@@ -401,3 +402,4 @@ overall_passing_spending = school_spending_df.groupby(["Spending Ranges (Per Stu
 ```
 
 ```
+-![image](https://github.com/fahr-khadija/pandas-challenge/blob/main/Images/score_by_school_Size_sammury.jpg)
