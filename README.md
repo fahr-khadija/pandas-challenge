@@ -369,7 +369,8 @@ spending_passing_reading = school_spending_df.groupby(["Spending Ranges (Per Stu
 overall_passing_spending = school_spending_df.groupby(["Spending Ranges (Per Student)"])["% Overall Passing"].mean()
 Use the scores above to create a DataFrame called spending_summary.
 ```
--![image](https://github.com/fahr-khadija/pandas-challenge/blob/main/Images/score_by_school_Size_sammury.jpg)
+-![image](https://github.com/fahr-khadija/pandas-challenge/blob/main/Images/spending_range(per%20Student)_sammury.jpg)
+
 ### Include the following metrics in the table:
 Average math score,Average reading score,% passing math (the percentage of students who passed math),% passing reading (the percentage of students who passed reading),% overall passing (the percentage of students who passed math AND reading),Scores by School Size
 
@@ -392,14 +393,26 @@ school_spending_df["Spending Ranges (Per Student)"] = pd.cut(
 ```
 #  Calculate averages for the desired columns. 
 ```
-spending_math_scores = school_spending_df.groupby(["Spending Ranges (Per Student)"])["Average Math Score"].mean()
-spending_reading_scores = school_spending_df.groupby(["Spending Ranges (Per Student)"])["Average Reading Score"].mean()
-spending_passing_math = school_spending_df.groupby(["Spending Ranges (Per Student)"])["% Passing Math"].mean()
-spending_passing_reading = school_spending_df.groupby(["Spending Ranges (Per Student)"])["% Passing Reading"].mean()
-overall_passing_spending = school_spending_df.groupby(["Spending Ranges (Per Student)"])["% Overall Passing"].mean()
+# Group the per_school_summary DataFrame by "School Type" and average the results.
+average_math_score_by_type = per_school_summary.groupby("School Type")["Average Math Score"].mean()
+average_reading_score_by_type = per_school_summary.groupby("School Type")["Average Reading Score"].mean()
+average_percent_passing_math_by_type = per_school_summary.groupby("School Type")["% Passing Math"].mean()
+average_percent_passing_reading_by_type = per_school_summary.groupby("School Type")["% Passing Reading"].mean()
+average_percent_overall_passing_by_type = per_school_summary.groupby("School Type")["% Overall Passing"].mean()
+
 ```
 ## Create a DataFrame called size_summary that breaks down school performance based on school size (small, medium, or large).
 ```
+# Assemble the new data by type into a DataFrame called `type_summary`
+type_summary =pd.DataFrame({
+    "Average Math Score": average_math_score_by_type,
+    "Average Reading Score": average_reading_score_by_type,
+    "% Passing Math": average_percent_passing_math_by_type,
+    "% Passing Reading": average_percent_passing_reading_by_type,
+    "% Overall Passing": average_percent_overall_passing_by_type
+})
 
+# Display results
+type_summary
 ```
 -![image](https://github.com/fahr-khadija/pandas-challenge/blob/main/Images/score_by_school_Size_sammury.jpg)
